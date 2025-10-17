@@ -1,0 +1,17 @@
+.btn-light {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-primary);
+    --bs-btn-bg: var(--bs-emphasis-color);
+    --bs-btn-border-color: var(--bs-emphasis-color);
+    --bs-btn-hover-bg: var(--bs-white);
+    --bs-btn-hover-border-color: var(--bs-emphasis-color);
+    --bs-btn-focus-shadow-rgb: var(--bs-tertiary-color-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: var(--bs-white);
+    --bs-btn-active-border-color: var(--bs-emphasis-color);
+  }
+
+.navbar {
+    --bs-navbar-color: var(--bs-emphasis-color);
+    --bs-navbar-hover-color: rgba(255, 255, 255);
+  }

@@ -1,0 +1,29 @@
+body {
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: var(--font-titres);
+    };
+
+}
+
+
+/* Images centrées dans les sections */
+.section-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.carousel-item--img {
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: var(--bs-secondary);
+  text-decoration: none;
+}

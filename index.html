@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,17 +8,63 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- favicone: <link rel="icon" href="images/favicon.png"> -->
+    <!-- favicone -->
+    <link rel="icon" href="images/mini.png">
     <!-- Thème / Composants / Styles -->
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <header>
 
+<body class="bg-primary">
+    <a href="#content" class="visually-hidden-focusable">Aller au contenu principal</a>
+    <!-- HEADER (NAVBAR Bootstrap) -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="accueil.html">
+                    <img src="images/logo.png" alt="Logo du fundome" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="accueil.html">
+                                <i class="fas fa-film"></i> Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vie.html">
+                                <i class="fas fa-video"></i> Découvre ma vie
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fun.html">
+                                <i class="fas fa-video"></i> Galerie & Fun Facts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <!-- CONTENU PRINCIPAL -->
+    <main id="content" class="container-xl">
+        <section class="row align-items-center mt-5">
+            <img src="images/banner.png" class="col-md-6">
+            <div class="text-center text-md-start col-md-6">
+                <h1>Bienvenue dans le monde merveilleux de l'Axolotl </h1>
+                <p>Plonge dans l'univers du plus souriant des animaux aquatiques ! L'Axolotl t'invite à découvrir sa vie
+                    mystérieuse et pleine de charme.</p>
+
+                <a class="btn btn-light mt-2" href="vie.html">Découvre moi</a>
+            </div>
+
+        </section>
 
     </main>
     <footer>
@@ -25,10 +72,10 @@
     </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous">
-    </script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
     <!-- JS -->
     <script src="index.js"></script>
 </body>
+
 </html>
