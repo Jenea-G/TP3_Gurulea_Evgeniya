@@ -5,10 +5,10 @@
   --bs-primary: #045377;
   --bs-primary-rgb: 4, 83, 119;
   
-  --bs-secondary: white;
-  --bs-secondary-rgb: 255, 255,255;
-  --bs-secondary-color: white;
-  --bs-secondary-color-rgb: 255, 255,255;
+  --bs-secondary: #522460;
+  --bs-secondary-rgb: 82, 36, 96;
+  --bs-secondary-color:  #522460;
+  --bs-secondary-color-rgb: 82, 36, 96;
   
   --bs-emphasis-color: #54edd1;
   --bs-emphasis-color-rgb: 127, 73, 133;
@@ -17,8 +17,8 @@
   --bs-tertiary-color-rgb: 210, 159, 201;
 
   /* Couleurs Bootstrap override */
-  --bs-body-color: var(--bs-secondary);
-  --bs-heading-color: var(--bs-secondary);
+  --bs-body-color: var(--bs-white);
+  --bs-heading-color: var(--bs-white);
   --bs-nav-link-color: var(--bs-tertiary-color);
 
   /* === Typographie === */

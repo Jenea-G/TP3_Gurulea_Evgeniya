@@ -10,6 +10,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- favicone -->
     <link rel="icon" href="images/mini.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Thème / Composants / Styles -->
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/components.css">
@@ -22,8 +23,8 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="accueil.html">
-                    <img src="images/logo.png" alt="Logo du fundome" height="50">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo du fundome" height="40">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
@@ -33,18 +34,18 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="accueil.html">
-                                <i class="fas fa-film"></i> Accueil
+                            <a class="nav-link active" href="index.html">
+                                <i class="fa-solid fa-house ms-2 me-1"></i> Accueil
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="vie.html">
-                                <i class="fas fa-video"></i> Découvre ma vie
+                                <i class="fa-solid fa-frog ms-2 me-1"></i> Découvre ma vie
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="fun.html">
-                                <i class="fas fa-video"></i> Galerie & Fun Facts
+                                <i class="fa-solid fa-camera-retro ms-2 me-1"></i> Galerie & Fun Facts
                             </a>
                         </li>
                     </ul>
@@ -55,25 +56,93 @@
     <!-- CONTENU PRINCIPAL -->
     <main id="content" class="container-xl">
         <section class="row align-items-center mt-5">
-            <img src="images/banner.png" class="col-md-6">
+            <img src="images/banner.png" class="col-md-6" alt="Illustration d'un axolotl">
             <div class="text-center text-md-start col-md-6">
                 <h1>Bienvenue dans le monde merveilleux de l'Axolotl </h1>
                 <p>Plonge dans l'univers du plus souriant des animaux aquatiques ! L'Axolotl t'invite à découvrir sa vie
                     mystérieuse et pleine de charme.</p>
-
                 <a class="btn btn-light mt-2" href="vie.html">Découvre moi</a>
             </div>
-
+        </section>
+        <hr>
+        <section class="mt-5 mb-5 ma-vie bg-secondary">
+            <div class="text-center p-4">
+                <div class="p-4">
+                    <img src="images/smile.jpg" class="ma-vie__img"
+                        alt="Photo de Loti, l'axolotl qui souris sous l'eau">
+                </div>
+                <h2>Je m'appelle Loti</h2>
+                <p class="col-md-8 offset-md-2">Certains me prennent pour un poisson, d'autres pour un dragon miniature…
+                    En vérité, je suis un amphibien très spécial ! Je garde mon apparence de bébé toute ma vie — c'est
+                    ce qu'on appelle la néoténie. Et oui, je souris toujours, même sous l'eau !</p>
+                <a class="btn btn-light mt-2" href="vie.html">Qui suis-je ?</a>
+            </div>
+        </section>
+        <hr>
+        <section class="mt-5">
+            <h2 class="pb-3">Explore mon univers aquatique :</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 text-center mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/card-1.png" class="card-img-top" alt="Illustration de Loti qui nage">
+                        <div class="card-body">
+                            <h6 class="card-title">De mes origines au Mexique jusqu'à mes talents cachés.”</h6>
+                            <!-- <p class="card-text">...</p> -->
+                            <a href="#" class="btn btn-primary card-body--links">Découvre ma vie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 offset-sm-3 col-lg-4 offset-lg-0 text-center mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/card-2.png" class="card-img-top"
+                            alt="Illustration de Loti qui joue avec un poisson">
+                        <div class="card-body">
+                            <h6 class="card-title">Ce que tu ne savais (probablement) pas sur moi.</h6>
+                            <a href="#" class="btn btn-primary card-body--links ">Faits étonnants</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/card-3.png" class="card-img-top"
+                            alt="Illustration de Loti dans une pose coquette">
+                        <div class="card-body">
+                            <h6 class="card-title">Admire mes plus belles photos et mes amis aquatiques.</h6>
+                            <a href="#" class="btn btn-primary card-body--links">Galerie magique</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
-    <footer>
+    <footer class="bg-secondary mt-5">
+        <div class="container pt-3 pb-3">
+            <div class="row text-center ">
+                <div class="col-12 col-lg-6 text-lg-start order-2 order-lg-1">
+                    <p>
+                        © 2025 Axolotl Fundome — Merci d'avoir nagé avec moi !
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 ms-auto text-lg-end order-1 order-lg-2">
+                    Suis mes aventures sur :
+                    <a href="https://www.facebook.com/" class="ms-3 me-3" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" class="ms-3 me-3" target="_blank" aria-label="Facebook"><i
+                            class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+
+        </div>
 
     </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="index.js"></script>
 </body>

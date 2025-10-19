@@ -3,27 +3,22 @@ body {
     h2,
     h3,
     h4,
-    h5 {
+    h5,
+    h6 {
         font-family: var(--font-titres);
     };
-
 }
 
+.ma-vie {
+  box-shadow: 0 0 15px 2px var(--bs-secondary); /* |h-offset v-offset blur spread color |inset|initial|inherit; */
 
-/* Images centrées dans les sections */
-.section-img {
-  display: block;
-  margin: 0 auto;
+  & .ma-vie__img {
   max-width: 80%;
-  border-radius: 10px;
-}
-
-.carousel-item--img {
-  height: 100%;
-  object-fit: cover;
+  border-radius: 260px 220px 200px 180px;
+  }
 }
 
 a {
-  color: var(--bs-secondary);
+  color: var(--bs-white);
   text-decoration: none;
 }

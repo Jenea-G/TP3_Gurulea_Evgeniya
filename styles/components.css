@@ -1,17 +1,54 @@
 .btn-light {
-    --bs-btn-color: var(--bs-primary);
-    --bs-btn-hover-color: var(--bs-primary);
-    --bs-btn-bg: var(--bs-emphasis-color);
-    --bs-btn-border-color: var(--bs-emphasis-color);
-    --bs-btn-hover-bg: var(--bs-white);
-    --bs-btn-hover-border-color: var(--bs-emphasis-color);
-    --bs-btn-focus-shadow-rgb: var(--bs-tertiary-color-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: var(--bs-white);
-    --bs-btn-active-border-color: var(--bs-emphasis-color);
-  }
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--bs-primary);
+  --bs-btn-bg: var(--bs-emphasis-color);
+  --bs-btn-border-color: var(--bs-emphasis-color);
+  --bs-btn-hover-bg: var(--bs-white);
+  --bs-btn-hover-border-color: var(--bs-emphasis-color);
+  --bs-btn-focus-shadow-rgb: var(--bs-tertiary-color-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-white);
+  --bs-btn-active-border-color: var(--bs-emphasis-color);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-tertiary-color);
+  --bs-btn-border-color: var(--bs-tertiary-color);
+  --bs-btn-hover-color: var(--bs-primary);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-emphasis-color), white 70%);
+  --bs-btn-hover-border-color: var(--bs-emphasis-color);
+  --bs-btn-focus-shadow-rgb: var(--bs-tertiary-color-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-emphasis-color);
+}
 
 .navbar {
-    --bs-navbar-color: var(--bs-emphasis-color);
-    --bs-navbar-hover-color: rgba(255, 255, 255);
+  --bs-navbar-color: var(--bs-emphasis-color);
+  --bs-navbar-hover-color: rgba(255, 255, 255);
+}
+
+.card {
+  padding: .5rem;
+  margin:auto;
+  height: 100%;
+
+  & .card-title {
+    color: var(--bs-primary);
   }
+
+  & .card-img-top {
+    border-radius: var(--bs-border-radius);
+  }
+
+  & .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  
+    & .card-body--links {
+      margin-top: auto;
+    }
+  }
+}
+
