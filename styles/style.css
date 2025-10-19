@@ -1,0 +1,24 @@
+body {
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-titres);
+    };
+}
+
+.ma-vie {
+  box-shadow: 0 0 15px 2px var(--bs-secondary); /* |h-offset v-offset blur spread color |inset|initial|inherit; */
+
+  & .ma-vie__img {
+  max-width: 80%;
+  border-radius: 260px 220px 200px 180px;
+  }
+}
+
+a {
+  color: var(--bs-white);
+  text-decoration: none;
+}
