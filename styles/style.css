@@ -22,3 +22,14 @@ a {
   color: var(--bs-white);
   text-decoration: none;
 }
+
+#mot {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.loti {
+  color: var(--bs-emphasis-color);
+  font-family: var(--font-titres);
+  font-size: 2em;
+}
