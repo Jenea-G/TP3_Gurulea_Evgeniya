@@ -22,3 +22,8 @@ a {
   color: var(--bs-white);
   text-decoration: none;
 }
+
+.zoom {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
