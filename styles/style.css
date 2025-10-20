@@ -39,6 +39,6 @@ a {
 }
 
 .montre {
-  display: block;
-  color: var(--bs-primary);
+  display: block !important;
+  color: var(--bs-primary) !important;
 }

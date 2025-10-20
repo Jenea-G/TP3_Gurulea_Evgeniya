@@ -1,7 +1,7 @@
 // Message de salutation au survol de Loti dans le banniere de l'accueil
 let monImage = document.getElementById("mon-image");
 
-if (monImage) { 
+if (monImage) {
     monImage.addEventListener("mouseover", () => afficherSalutation());
     monImage.addEventListener("mouseout", () => cacherSalutation());
 }
@@ -31,14 +31,17 @@ if (monMot) {
     monMot.addEventListener("click", () => changerLaClass());
 }
 
-function changerLaClass() {monMot.classList.toggle("loti");
+function changerLaClass() {
+    monMot.classList.toggle("loti");
 };
 
-let imgFun = document.getElementById("img-fun");
-if (imgFun) {
-    imgFun.addEventListener("click", () => changerLaClassPourAfficher());
-}
-function changerLaClassPourAfficher(){
-    let monDiv = getElementsByClassName ("cache")[0];
-    monDiv.classList.toggle("montre");
+// Affiche les divs avec texte on cliquant sur image dans la page fun
+
+let imgsFun = document.getElementsByClassName("img-fun");
+
+for (let i = 0; i < imgsFun.length; i++) {
+    imgsFun[i].addEventListener("click", function () {
+        let monDiv = this.nextElementSibling;
+        monDiv.classList.toggle("montre");
+    });
 }
