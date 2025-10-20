@@ -33,3 +33,12 @@ if (monMot) {
 
 function changerLaClass() {monMot.classList.toggle("loti");
 };
+
+let imgFun = document.getElementById("img-fun");
+if (imgFun) {
+    imgFun.addEventListener("click", () => changerLaClassPourAfficher());
+}
+function changerLaClassPourAfficher(){
+    let monDiv = getElementsByClassName ("cache")[0];
+    monDiv.classList.toggle("montre");
+}

@@ -33,3 +33,12 @@ a {
   font-family: var(--font-titres);
   font-size: 2em;
 }
+
+.cache {
+  display: none !important;
+}
+
+.montre {
+  display: block;
+  color: var(--bs-primary);
+}
