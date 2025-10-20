@@ -1,8 +1,10 @@
 // Message de salutation au survol de Loti dans le banniere de l'accueil
 let monImage = document.getElementById("mon-image");
 
-monImage.addEventListener("mouseover", () => afficherSalutation());
-monImage.addEventListener("mouseout", () => cacherSalutation());
+if (monImage) { 
+    monImage.addEventListener("mouseover", () => afficherSalutation());
+    monImage.addEventListener("mouseout", () => cacherSalutation());
+}
 
 function afficherSalutation() {
     //Création du nouveau paragraphe orphelin
@@ -22,7 +24,12 @@ function cacherSalutation() {
     parentAdoptif.removeChild(titreOrphelin);
 }
 
+// Le nom Loti aggrandi et change la couleur on clique dans le formulaire de la page vie
 let monMot = document.getElementById("mot");
-monMot.addEventListener("click", () => changerLaClass());
+
+if (monMot) {
+    monMot.addEventListener("click", () => changerLaClass());
+}
+
 function changerLaClass() {monMot.classList.toggle("loti");
 };
