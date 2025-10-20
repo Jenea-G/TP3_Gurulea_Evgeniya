@@ -52,3 +52,11 @@
   }
 }
 
+.text-muted {
+  --bs-text-opacity: .8;
+  color: var(--bs-white) !important;
+}
+
+textarea, input {
+  color: var(--bs-secondary)!important;
+}
