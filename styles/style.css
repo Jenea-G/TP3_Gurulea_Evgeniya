@@ -6,7 +6,7 @@ body {
     h5,
     h6 {
         font-family: var(--font-titres);
-    };
+    }
 }
 
 .ma-vie {
@@ -41,4 +41,48 @@ a {
 .montre {
   display: block !important;
   color: var(--bs-primary) !important;
+}
+
+.ocean {
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height: 100px;
+
+& .ocean__vague {
+  position: absolute;
+  width:100%;
+  height: 100px;
+  background: url(../images/fun/vague.svg);
+  background-size: 800px 100px;
+  animation: bouge-vague 10s linear infinite;
+  opacity: 0.8;
+  }
+
+& .ocean__vague--rev {
+  background: url(../images/fun/vague.svg);
+  background-size: 800px 100px;
+  animation: bouge-vague-rev 10s linear infinite;
+  opacity: 0.5;
+  }
+}
+
+@keyframes bouge-vague {
+  from { background-position-x: 0; }
+  to   { background-position-x: 800px; }
+}
+
+@keyframes bouge-vague-rev {
+  from { background-position-x: 800px; }
+  to   { background-position-x: 0; }
+}
+
+@media (min-width: 768px) {
+  .img-zoom {
+    transition: transform 0.4s ease;
+  }
+  
+  .img-zoom:hover {
+    transform: scale(1.05);
+  }
 }
